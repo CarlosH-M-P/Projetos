@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Cores</title>
+    <style>
+        .conteiner{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+        .cores{
+            display: flex;
+        }
+        .azul{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .vermelho{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .amarelo{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function checacor(){
+            let azul = document.getElementById('az');
+            if (azul.checked){
+                document.getElementById('azul').style.backgroundColor = 'blue';
+            }
+            else{
+                document.getElementById('azul').style.backgroundColor = 'white';
+            }
+            let vermelho = document.getElementById('ve');
+            if (ve.checked){
+                document.getElementById('vermelho').style.backgroundColor = 'red';
+            }
+            else{
+                document.getElementById('vermelho').style.backgroundColor = 'white';
+            }
+            let amarelo = document.getElementById('am');
+            if (am.checked){
+                document.getElementById('amarelo').style.backgroundColor = 'yellow';
+            }
+            else{
+                document.getElementById('amarelo').style.backgroundColor = 'white';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="conteiner">
+        <div>
+            <input type="button" value="Checa Cor" onclick="checacor()">
+        </div>
+        <div>
+            <input id="az" type="checkbox"> Azul
+            <input id="ve" type="checkbox"> Vermelho
+            <input id="am" type="checkbox"> Amarelo
+        </div>
+        <div class="cores">
+            <div id="azul" class="azul" style="backgroud-color: white;"></div>
+            <div id="vermelho"     class="vermelho" style="backgroud-color: white;"></div>
+            <div id="amarelo" class="amarelo" style="backgroud-color: white;"></div>
+        </div>
+    </div>
+</body>
+</html>

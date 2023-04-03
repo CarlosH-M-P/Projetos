@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <label>Endereço</label>
+        <input type="text" name="endereço" placeholder="Endereço" size="40" maxlength="150" >
+        <label>data do pedido</label> 
+        <input type="date" name="data"/>
+        <label>Senha de autorização</label>
+        <input type="password" name="senha">
+        <input type="radio" id="alternativo1" name="alternativa" value="A"/> 
+        <label for="alternativo1">Casa</label>
+        <input type="radio" id="alternativo1" name="alternativa" value="B"/> 
+        <label for="alternativo1">Predio</label>
+        <input type="radio" id="alternativo1" name="alternativa" value="A"/> 
+        <label for="alternativo2">Comercio</label>
+        <input type="radio" id="alternativo3" name="alternativa" value="A"/> 
+        <label for="alternativo4">Nenhuma das opçoes</label>
+        <input type="checkbox" id="alternativa1" name="alternativa" value="A">
+        <label for="alternativa1">Casa</label>
+        <input type="checkbox" id="alternativa2" name="alternativa" value="A">
+        <label for="alternativa1">Prédio</label>
+        <input type="checkbox" id="alternativa3" name="alternativa" value="A">
+        <label for="alternativa1">Comércio</label>
+        <input type="checkbox" id="alternativa4" name="alternativa" value="A">
+        <label for="alternativa1">Nenhuma das opções</label>
+        <label>Email</label>
+        <input type="text">
+        <label>Tipo de endereço</label>
+        <select name="tp_endereco" id="tp_endereco">
+            <option value="AC">Casa</option>
+            <option value="AC">Prédio</option>
+            <option value="AC">Comércio</option>
+            <option value="AC">Nenhuma das opções</option>
+        </select>
+        <textarea name="texto" id="texto" cols="60" rows="10"></textarea>
+        <input type="submit" name="enviar" value="Salvar">
+        <input type="button" name="chamar" value="Chamar" onclick="alert('Primeira Mensagem!!!')">
+    </form>
+</body>
+</html>
